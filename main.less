@@ -1,0 +1,103 @@
+@main-color: lightblue; 
+@main-color-dark: darken(@main-color, 20%);
+@main-color-light: lighten(@main-color, 15%);
+
+.main-container {
+    width: 800px;
+    height: calc(600px+70px);
+    border: 3px solid black;    
+}
+
+.header {
+    height: 70px;
+    border-bottom: 3px solid black;  
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 0 15px;    
+    background-color: @main-color-light;
+}
+
+.first-line {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+.second-line {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.cross {
+    font-family:'Arial Black';
+    font-weight: bold; 
+    color:#000;
+    position: absolute;
+    left: 780px;
+    top: 15px;
+    }
+
+.block {
+    padding: 0 15px 0 0;
+}
+
+.flex-container {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-flow: row wrap;
+    overflow-y: scroll;
+    background-color: @main-color-dark;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+}
+
+.left-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    padding: 0 15px 0 10px;   
+}
+
+.left-flex-container-1 {
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 15px;
+    background-color: @main-color;
+}
+
+.left-flex-container-2 {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-flex-container {
+    flex-direction: column;
+    width: calc(800px-150px);
+    height: 100%;
+    border-left: 2px solid black; 
+    padding: 20px 0 0 20px;
+}
+
+.message {
+    border: 2px solid black;
+    width: 90%;
+    padding: 25px;
+    background-color: @main-color;
+}
