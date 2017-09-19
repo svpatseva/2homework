@@ -3,33 +3,20 @@
 @main-color-light: lighten(@main-color, 15%);
 
 .main-container {
-    width: calc(800px-6px);
-    height: calc(600px+70px-6px);
+    width: 794px;
+    height: 664px;
     border: 3px solid black;    
 }
 
 .header {
-    height: 64px;
-    border-bottom: 3px solid black;  
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    padding: 0 15px;    
+    height: 48px;
+    border-bottom: 3px solid black;   
+    padding: 8px 15px;    
     background-color: @main-color-light;
 }
 
 .first-line {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
     font-size: 25px;
-}
-
-.second-line {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
 .cross {
@@ -37,16 +24,16 @@
     font-weight: bold; 
     color:#000;
     position: absolute;
-    left: 780px;
+    left: 775px;
     top: 15px;
-    }
+}
 
 .block {
     padding: 0 15px 0 0;
 }
 
 .flex-container {
-    height: calc(600px-3px);
+    height: 597px;
     display: flex;
     justify-content: space-around;
     align-items: space-around;
@@ -77,7 +64,7 @@
     justify-content: space-around;
     align-items: center;
     border: 2px solid black;
-    border-radius: 100%;
+    border-radius: 50%;
     padding: 15px;
     background-color: @main-color;
 }
@@ -89,7 +76,7 @@
 
 .right-flex-container {
     flex-direction: column;
-    width: calc(800px-150px);
+    flex-grow: 1;
     height: 100%;
     border-left: 2px solid black; 
     padding: 20px 0 0 20px;
